@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Shahin Hosen | Website Template Setup Specialist</title>
+    <meta name="description"
+        content="Md. Shahin Hosen - Website Template Setup Specialist. Professional template setup, CSS customization, responsive design and bug fixing for individuals and businesses.">
+    <meta name="theme-color" content="#4f46e5">
+    <meta property="og:title" content="Md. Shahin Hosen | Website Template Setup Specialist">
+    <meta property="og:description"
+        content="Professional website template setup, CSS customization, responsive design and bug fixing.">
+    <meta property="og:type" content="website">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f46e5'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='26' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+    <script>
+        // Apply saved theme + JS flag before paint (prevents flash)
+        (function () {
+            document.documentElement.classList.add('js');
+            try {
+                var t = localStorage.getItem('theme');
+                if (t) document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { }
+        })();
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-logo">Shahin<span>.</span></div>
+        <div class="loader-bar"><span></span></div>
+    </div>
+
+    <!-- Cursor glow (desktop only) -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Shahin<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">My Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-btn">Hire Me</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <span class="orb orb-1"></span>
+            <span class="orb orb-2"></span>
+            <span class="orb orb-3"></span>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge"><span class="pulse-dot"></span> Available for new projects</span>
+                <h1>Professional <span class="gradient-text">Website Template</span> Setup &amp; Customization</h1>
+                <p>I help individuals and businesses build professional websites by setting up and customizing
+                    ready-made website templates.</p>
+                <p class="typing-line">I specialize in <strong id="typedText"></strong><span class="cursor">|</span></p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                    <a href="#portfolio" class="btn btn-secondary">View My Work <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3><span class="counter" data-target="6">0</span>+</h3>
+                        <p>Projects Done</p>
+                    </div>
+                    <div class="stat">
+                        <h3><span class="counter" data-target="100">0</span>%</h3>
+                        <p>Responsive</p>
+                    </div>
+                    <div class="stat">
+                        <h3><span class="counter" data-target="6">0</span></h3>
+                        <p>Core Services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrap">
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <!-- আপনার নিজের ছবি এখানে যোগ করুন -->
+                    <img src="shahin.jpg" alt="Md. Shahin Hosen">
+                    <div class="float-card fc-1"><i class="fas fa-mobile-alt"></i> Responsive</div>
+                    <div class="float-card fc-2"><i class="fas fa-code"></i> Clean Code</div>
+                    <div class="float-card fc-3"><i class="fas fa-bolt"></i> Fast Delivery</div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- Tools Marquee -->
+    <section class="marquee" aria-label="Tools and technologies">
+        <div class="marquee-track">
+            <span><i class="fab fa-html5"></i> HTML5</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+            <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+            <span><i class="fas fa-terminal"></i> VS Code</span>
+            <span><i class="fas fa-bug"></i> DevTools</span>
+            <span><i class="fab fa-github"></i> GitHub Pages</span>
+            <span><i class="fas fa-paint-brush"></i> Customization</span>
+            <span><i class="fab fa-html5"></i> HTML5</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+            <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+            <span><i class="fas fa-terminal"></i> VS Code</span>
+            <span><i class="fas fa-bug"></i> DevTools</span>
+            <span><i class="fab fa-github"></i> GitHub Pages</span>
+            <span><i class="fas fa-paint-brush"></i> Customization</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <span class="section-tag reveal">Who I Am</span>
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content reveal">
+                <p>Hi, I'm Shahin Hossain. I'm a Website Template Setup Specialist. I help individuals and businesses
+                    set up and customize ready-made website templates according to their needs. My goal is to deliver
+                    clean, responsive and professional-looking websites.</p>
+                <div class="skills-list">
+                    <span><i class="fab fa-html5"></i> HTML5</span>
+                    <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span><i class="fab fa-js"></i> JavaScript (Basic)</span>
+                    <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                    <span><i class="fas fa-sliders-h"></i> Website Customization</span>
+                    <span><i class="fas fa-terminal"></i> VS Code</span>
+                    <span><i class="fas fa-bug"></i> Browser DevTools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding bg-light">
+        <div class="container">
+            <span class="section-tag reveal">What I Do</span>
+            <h2 class="section-title reveal">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Template Setup</h3>
+                    <p>Complete installation and configuration of ready-made HTML templates.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                    <h3>CSS Customization</h3>
+                    <p>Changing colors, fonts, and layouts to match your brand identity.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring your website looks perfect on mobile, tablet, and desktop.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-edit"></i></div>
+                    <h3>Content Update</h3>
+                    <p>Replacing images, updating text, and adding new sections as needed.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-bug"></i></div>
+                    <h3>Bug Fixing</h3>
+                    <p>Basic troubleshooting and fixing layout issues in templates.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <h3>Landing Page Setup</h3>
+                    <p>Creating high-converting single-page layouts for your campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work / Portfolio Section -->
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <span class="section-tag reveal">Portfolio</span>
+            <h2 class="section-title reveal">My Work</h2>
+            <p class="section-subtitle reveal">Here are some of the template setup and customization projects I have
+                completed.</p>
+
+            <div class="filter-bar reveal" id="filterBar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Business">Business</button>
+                <button class="filter-btn" data-filter="Portfolio">Portfolio</button>
+                <button class="filter-btn" data-filter="Healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="Food & Beverage">Food &amp; Beverage</button>
+                <button class="filter-btn" data-filter="Agency">Agency</button>
+                <button class="filter-btn" data-filter="Landing Page">Landing Page</button>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <!-- Project 1: Business Website -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img">
+                        <!-- ইমেজের লিংক পরিবর্তন করুন -->
+                        <img src="Business.png" alt="Business Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="category-badge">Business</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Business Website</h3>
+                        <p class="project-desc">A clean and professional template setup for a modern corporate company.
+                        </p>
+                        <div class="work-details">
+                            <h4>What I Did:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Template Installation</li>
+                                <li><i class="fas fa-check"></i> Color &amp; Font Customization</li>
+                                <li><i class="fas fa-check"></i> Content &amp; Image Replacement</li>
+                                <li><i class="fas fa-check"></i> Responsive Adjustment</li>
+                            </ul>
+                        </div>
+                        <!-- এখানে আপনার ডেমো ওয়েবসাইটের লাইভ লিংক দিন -->
+                        <a href="https://shahinprogamer.github.io/Corporate-Business-Website_1/" target="_blank"
+                            rel="noopener" class="btn btn-small btn-full">Live Preview <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Personal Portfolio -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img">
+                        <img src="Portfolio.png" alt="Personal Portfolio" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="category-badge">Portfolio</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Personal Portfolio Website</h3>
+                        <p class="project-desc">A minimalist portfolio template customized to showcase skills and
+                            projects.</p>
+                        <div class="work-details">
+                            <h4>What I Did:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Template Installation</li>
+                                <li><i class="fas fa-check"></i> Color &amp; Font Customization</li>
+                                <li><i class="fas fa-check"></i> Responsive Adjustment</li>
+                                <li><i class="fas fa-check"></i> Bug Fixing</li>
+                            </ul>
+                        </div>
+                        <a href="https://shahinprogamer.github.io/Personal-Portfolio-Website_2/" target="_blank"
+                            rel="noopener" class="btn btn-small btn-full">Live Preview <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Doctor / Clinic Website -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img">
+                        <img src="MediCare_Clinic.png" alt="Doctor Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="category-badge">Healthcare</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Doctor / Clinic Website</h3>
+                        <p class="project-desc">A medical template setup with an appointment system and clean layout.
+                        </p>
+                        <div class="work-details">
+                            <h4>What I Did:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Template Installation</li>
+                                <li><i class="fas fa-check"></i> Content &amp; Image Replacement</li>
+                                <li><i class="fas fa-check"></i> Responsive Adjustment</li>
+                                <li><i class="fas fa-check"></i> Bug Fixing</li>
+                            </ul>
+                        </div>
+                        <a href="https://shahinprogamer.github.io/Doctor-Clinic-Website_3/" target="_blank"
+                            rel="noopener" class="btn btn-small btn-full">Live Preview <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Restaurant Website -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img">
+                        <img src="resturen.png" alt="Restaurant Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="category-badge">Food &amp; Beverage</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Website</h3>
+                        <p class="project-desc">A delicious template with menu integration and a gallery section.</p>
+                        <div class="work-details">
+                            <h4>What I Did:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Template Installation</li>
+                                <li><i class="fas fa-check"></i> Color &amp; Font Customization</li>
+                                <li><i class="fas fa-check"></i> Content &amp; Image Replacement</li>
+                                <li><i class="fas fa-check"></i> Responsive Adjustment</li>
+                            </ul>
+                        </div>
+                        <a href="https://shahinprogamer.github.io/Restaurant-Website_4/" target="_blank" rel="noopener"
+                            class="btn btn-small btn-full">Live Preview <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Agency Website -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img">
+                        <img src="Digital.png" alt="Agency Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="category-badge">Agency</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Digital Agency Website</h3>
+                        <p class="project-desc">A modern layout for a marketing agency, customized for brand identity.
+                        </p>
+                        <div class="work-details">
+                            <h4>What I Did:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Template Installation</li>
+                                <li><i class="fas fa-check"></i> Color &amp; Font Customization</li>
+                                <li><i class="fas fa-check"></i> Responsive Adjustment</li>
+                                <li><i class="fas fa-check"></i> Bug Fixing</li>
+                            </ul>
+                        </div>
+                        <a href="https://shahinprogamer.github.io/Digital-Agency-Website_5/" target="_blank"
+                            rel="noopener" class="btn btn-small btn-full">Live Preview <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Landing Page -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img">
+                        <img src="landing.png" alt="Landing Page" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="category-badge">Landing Page</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Product Landing Page</h3>
+                        <p class="project-desc">A high-converting single-page setup for a product launch campaign.</p>
+                        <div class="work-details">
+                            <h4>What I Did:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Template Installation</li>
+                                <li><i class="fas fa-check"></i> Content &amp; Image Replacement</li>
+                                <li><i class="fas fa-check"></i> Responsive Adjustment</li>
+                                <li><i class="fas fa-check"></i> Bug Fixing</li>
+                            </ul>
+                        </div>
+                        <a href="https://shahinprogamer.github.io/Product-Landing-Page_6/" target="_blank"
+                            rel="noopener" class="btn btn-small btn-full">Live Preview <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="process section-padding bg-light">
+        <div class="container">
+            <span class="section-tag reveal">How I Work</span>
+            <h2 class="section-title reveal">Work Process</h2>
+            <div class="process-steps">
+                <div class="step reveal">
+                    <span class="step-number">1</span>
+                    <h4>Requirement</h4>
+                </div>
+                <div class="step reveal">
+                    <span class="step-number">2</span>
+                    <h4>Template Selection</h4>
+                </div>
+                <div class="step reveal">
+                    <span class="step-number">3</span>
+                    <h4>Setup</h4>
+                </div>
+                <div class="step reveal">
+                    <span class="step-number">4</span>
+                    <h4>Customization</h4>
+                </div>
+                <div class="step reveal">
+                    <span class="step-number">5</span>
+                    <h4>Testing</h4>
+                </div>
+                <div class="step reveal">
+                    <span class="step-number">6</span>
+                    <h4>Delivery</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section class="why-me section-padding">
+        <div class="container">
+            <span class="section-tag reveal">Advantages</span>
+            <h2 class="section-title reveal">Why Choose Me?</h2>
+            <div class="features-grid">
+                <div class="feature reveal">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Clean and Professional Design</p>
+                </div>
+                <div class="feature reveal">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Responsive Website Setup</p>
+                </div>
+                <div class="feature reveal">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Attention to Client Requirements</p>
+                </div>
+                <div class="feature reveal">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Organized Work Process</p>
+                </div>
+                <div class="feature reveal">
+                    <i class="fas fa-check-circle"></i>
+                    <p>On-Time Delivery</p>
+                </div>
+                <div class="feature reveal">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Friendly Communication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section-padding bg-light" id="faq">
+        <div class="container">
+            <span class="section-tag reveal">FAQ</span>
+            <h2 class="section-title reveal">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-q" aria-expanded="false">What is website template setup? <i
+                            class="fas fa-plus"></i></button>
+                    <div class="faq-a">
+                        <p>I take a ready-made website template, install it, and customize it &mdash; colors, fonts,
+                            images, text and layout &mdash; so it fits your brand and business.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" aria-expanded="false">Will my website work on mobile phones? <i
+                            class="fas fa-plus"></i></button>
+                    <div class="faq-a">
+                        <p>Yes. Every website I set up is checked and adjusted so it looks good on mobile, tablet and
+                            desktop.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" aria-expanded="false">What do I need to give you to get started? <i
+                            class="fas fa-plus"></i></button>
+                    <div class="faq-a">
+                        <p>Your requirements, plus any content you already have: logo, images, text and brand colors. If
+                            you don't have a template yet, I can help you choose one.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" aria-expanded="false">Can you fix problems in a template I already have? <i
+                            class="fas fa-plus"></i></button>
+                    <div class="faq-a">
+                        <p>Yes. I do basic troubleshooting and fix layout issues, and I can also update content or add
+                            new sections.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q" aria-expanded="false">How can I contact you? <i
+                            class="fas fa-plus"></i></button>
+                    <div class="faq-a">
+                        <p>Use the contact form below, or message me on Fiverr or Upwork using the links in the Contact
+                            section.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta">
+        <div class="container cta-inner reveal">
+            <div>
+                <h2>Ready to launch your website?</h2>
+                <p>Let's turn a ready-made template into a website that looks and feels like your brand.</p>
+            </div>
+            <a href="#contact" class="btn btn-white">Start a Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-light">
+        <div class="container">
+            <span class="section-tag reveal">Get In Touch</span>
+            <h2 class="section-title reveal">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info reveal">
+                    <h3>Let's Work Together</h3>
+                    <p>Feel free to reach out for any inquiries or project discussions.</p>
+                    <ul>
+                        <li><span class="ci-icon"><i class="fas fa-envelope"></i></span> mhlovebd548@gmail.com</li>
+                        <li><span class="ci-icon"><i class="fas fa-user"></i></span> Md. Shahin Hosen</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.fiverr.com/shahinprogamer" target="_blank" rel="noopener"><i
+                                class="fab fa-fiverr"></i> Fiverr</a>
+                        <a href="https://www.upwork.com/freelancers/shahinprogamer" target="_blank" rel="noopener"><i
+                                class="fab fa-upwork"></i> Upwork</a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="_subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
+                        style="position:absolute;left:-9999px" aria-hidden="true">
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Md. Shahin Hosen</h3>
+                <p>Website Template Setup Specialist</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/shahinprogamer" target="_blank" rel="noopener"
+                        aria-label="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://linkedin.com/in/shahinprogamer" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shahinprogamer" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: mhlovebd548@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> Md. Shahin Hosen. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"><i class="fas fa-check-circle"></i> <span>Thank you for your message! I will get back
+            to you soon.</span></div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
